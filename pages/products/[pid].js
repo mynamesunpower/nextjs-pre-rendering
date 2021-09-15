@@ -49,7 +49,7 @@ export async function getStaticProps(context) {
 }
 
 export async function getStaticPaths() {
-  // 어떤 동적 페이지를 생성할 것인지.
+  // 어떤 동적 페이지를 pre-generate 할 것인지.
 
   const data = await getData();
   const ids = data.products.map((product) => product.id);
